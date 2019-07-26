@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`picture component testing renders picture styled-component 1`] = `
+<div
+  className="sc-bdVaJa gAxlWe"
+/>
+`;

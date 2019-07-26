@@ -4,11 +4,11 @@ import ProfilePicture from './ProfilePicture';
 import Name from './Name';
 import Content from './Content';
 
-export default () =>
+export default (props) =>
     <CustomerCard>
-        <ProfilePicture />
+        <ProfilePicture imageHash={props.imageHash}/>
         <Content>
-            <Name></Name>
-            <div></div>
+            <Name>{props.name}</Name>
+            <div><small>Expected time: </small>{props.expectedTime}</div>
         </Content>
     </CustomerCard>;

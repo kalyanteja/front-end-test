@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "base-64": "^0.1.0",
+    "dateformat": "^3.0.3",
     "immutable": "^4.0.0-rc.12",
+    "md5": "^2.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -28,5 +30,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://app.qudini.com"
+  "proxy": "https://app.qudini.com",
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "expect": "^24.8.0",
+    "expect-enzyme": "^1.3.0",
+    "jest-styled-components": "^6.3.3"
+  }
 }

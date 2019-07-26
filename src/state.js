@@ -1,12 +1,9 @@
-import { configureStore } from 'redux-starter-kit';
-import { combineReducers } from 'redux';
-import queue from './Queue/reducer'
+import {createStore} from 'redux';
+import reducer from './reducers/reducer';
 
-const reducer = combineReducers({
-    queue
-});
+const emptyState = {
+    customers: [],
+    isLoading: false
+}
 
-export default configureStore({
-    reducer,
-    devTools: process.env.NODE_ENV !== 'production'
-});
+export default createStore(reducer, emptyState);

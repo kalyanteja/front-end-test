@@ -18,7 +18,7 @@ const App = () =>
                 <Logo src={logo} />
             </Navigation>
             <Content>
-            <QueueScreen />
+                <QueueScreen />
             </Content>
         </Container>
     </Provider>;

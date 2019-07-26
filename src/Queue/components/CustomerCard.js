@@ -5,6 +5,18 @@ export default styled.div`
   border-width: 1px;
   border-color: lightgray;
   border-radius: 0.2em;
-  width: 290px;
-  height: 370px;
+  margin: 20px auto;
+  display: flex;
+
+  @media (max-width: 450px){
+    width: 290px;
+    height: 370px;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 450px){
+    width: 80%;
+    height: 170px;
+    flex-direction: row;
+  }
 `;
